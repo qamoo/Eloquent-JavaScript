@@ -26,7 +26,8 @@ That is where ((programming)) may come in. _Programming_ is the act of construct
 Fortunately, if you can get over that fact—and maybe even enjoy the rigor of thinking in terms that dumb machines can deal with—programming can be rewarding. It allows you to do things in seconds that would take _forever_ by hand. It is a way to make your computer tool do things that it couldn't do before. On top of that, it makes for a wonderful game of puzzle solving and abstract thinking.
 그럼에도 불구하고, 만약 여러분이 이 사실을 극복하고 멍청한 기계가 다룰 수 있는 용어로 사고하는 엄밀함을 즐길 수만 있다면 어쩌면 프로그래밍은 보람찰 수 있습니다. 프로그래밍을 통해 손으로는 영원히 걸릴 일을 단 몇 초 안에 처리할 수 있습니다. 이전에는 할 수 없었던 일들을 컴퓨터를 통해 할 수 있게된 것이죠. 그 위에, 퍼즐 해결과 추상적 사고의 멋진 게임을 만듭니다.
 
-Most programming is done with ((programming language))s. A _programming language_ is an artificially constructed language used to instruct computers. It is interesting that the most effective way we've found to communicate with a computer borrows so heavily from the way we communicate with each other. Like human languages, computer languages allow words and phrases to be combined in new ways, making it possible to express ever new concepts.
+Most programming is done with ((programming language))s. A _programming language_ is an artificially constructed language used to instruct computers. It is interesting that the most effective way we've found to communicate with a computer borrows so heavily from the way we communicate with each other. Like human languages, computer languages allow words and phrases to be combined in new ways, making it possible to express ever new concepts.  
+프로그래밍 대부분은 프로그래밍 언어로 이루어집니다. 프로그래밍 언어는 컴퓨터에 명령을 내리는 데 사용되는 인공으로 구축된 언어입니다. 우리가 컴퓨터와 소통하는 가장 효과적인 방법이 우리가 서로 소통하는 방식에서 크게 영감을 받았다는 것은 흥미로운 점입니다. 인간의 언어처럼, 컴퓨터 언어는 단어와 구문을 새롭게 결합하여 새로운 개념을 표현할 수 있게 만들어줍니다.
 
 {{index [JavaScript, "availability of"], "casual computing"}}
 
