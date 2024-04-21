@@ -6,6 +6,8 @@
 
 We think we are creating the system for our own purposes. We believe we are making it in our own image... But the computer is not really like us. It is a projection of a very slim part of ourselves: that portion devoted to logic, order, rule, and clarity.
 
+우리는 우리 자신의 목적을 위해 시스템을 만들고 있다고 생각합니다. 우리는 우리 자신을 형상으로하여 시스템을 만들고 있다고 믿습니다... 그러나 컴퓨터는 실제로 우리와 같지 않습니다. 컴퓨터는 우리의 매우 한정된 부분만을 반영한 것입니다. 그 부분은 논리, 질서, 규칙, 명료성에 집중되어 있죠. 
+
 quote}}
 
 {{figure {url: "img/chapter_picture_00.jpg", alt: "Illustration of a screwdriver next to a circuit board of about the same size", chapter: "framed"}}}
