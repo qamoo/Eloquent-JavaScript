@@ -12,15 +12,19 @@ quote}}
 
 {{figure {url: "img/chapter_picture_00.jpg", alt: "Illustration of a screwdriver next to a circuit board of about the same size", chapter: "framed"}}}
 
-This is a book about instructing ((computer))s. Computers are about as common as screwdrivers today, but they are quite a bit more complex, and making them do what you want them to do isn't always easy.
+This is a book about instructing ((computer))s. Computers are about as common as screwdrivers today, but they are quite a bit more complex, and making them do what you want them to do isn't always easy.   
+이 책은 ((컴퓨터))에게 일을 시키는 것에 관한 책입니다. 컴퓨터는 오늘날 나사 드라이버만큼 흔하지만, 훨씬 더 복잡하며, 원하는 대로 작동하도록 만드는 것은 항상 쉽지 않습니다.
 
-If the task you have for your computer is a common, well-understood one, such as showing you your email or acting like a calculator, you can open the appropriate ((application)) and get to work. But for unique or open-ended tasks, there often is no appropriate application.
+If the task you have for your computer is a common, well-understood one, such as showing you your email or acting like a calculator, you can open the appropriate ((application)) and get to work. But for unique or open-ended tasks, there often is no appropriate application.   
+컴퓨터에게 시키는 일이 이메일을 보여주거나 계산을 하는 일 등 일반적이고 단순한 작업이라면 적절한 응용 프로그램을 찾아 실행하고 작업을 할 수 있습니다. 그러나 일반적이지 않거나 단순하게 해결되지 않는 작업의 경우 적절한 ((응용 프로그램))이 없는 경우가 많습니다.
 
-That is where ((programming)) may come in. _Programming_ is the act of constructing a _program_—a set of precise instructions telling a computer what to do. Because computers are dumb, pedantic beasts, programming is fundamentally tedious and frustrating.
+That is where ((programming)) may come in. _Programming_ is the act of constructing a _program_—a set of precise instructions telling a computer what to do. Because computers are dumb, pedantic beasts, programming is fundamentally tedious and frustrating.  
+이때 우리에게 ((프로그래밍))이 필요합니다. _프로그래밍_은 _프로그램_을 구성하는 행위입니다. 프로그램은 컴퓨터에게 무엇을 해야하는지 정확하게 알려주는 것입니다. 컴퓨터는 말을 못하고 까탈스러운 짐승이기 때문에, 프로그래밍은 본질적으로 지루하고 짜증 나는 일입니다.
 
 {{index [programming, "joy of"], speed}}
 
 Fortunately, if you can get over that fact—and maybe even enjoy the rigor of thinking in terms that dumb machines can deal with—programming can be rewarding. It allows you to do things in seconds that would take _forever_ by hand. It is a way to make your computer tool do things that it couldn't do before. On top of that, it makes for a wonderful game of puzzle solving and abstract thinking.
+그럼에도 불구하고, 만약 여러분이 이 사실을 극복하고 멍청한 기계가 다룰 수 있는 용어로 사고하는 엄밀함을 즐길 수만 있다면 어쩌면 프로그래밍은 보람찰 수 있습니다. 프로그래밍을 통해 손으로는 영원히 걸릴 일을 단 몇 초 안에 처리할 수 있습니다. 이전에는 할 수 없었던 일들을 컴퓨터를 통해 할 수 있게된 것이죠. 그 위에, 퍼즐 해결과 추상적 사고의 멋진 게임을 만듭니다.
 
 Most programming is done with ((programming language))s. A _programming language_ is an artificially constructed language used to instruct computers. It is interesting that the most effective way we've found to communicate with a computer borrows so heavily from the way we communicate with each other. Like human languages, computer languages allow words and phrases to be combined in new ways, making it possible to express ever new concepts.
 
