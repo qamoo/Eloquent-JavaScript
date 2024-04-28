@@ -31,7 +31,8 @@ Most programming is done with ((programming language))s. A _programming language
 
 {{index [JavaScript, "availability of"], "casual computing"}}
 
-At one point, language-based interfaces, such as the BASIC and DOS prompts of the 1980s and 1990s, were the main method of interacting with computers. For routine computer use, these have largely been replaced with visual interfaces, which are easier to learn but offer less freedom. But if you know where to look, the languages are still there. One of them, _JavaScript_, is built into every modern web ((browser))—and is thus available on almost every device.
+At one point, language-based interfaces, such as the BASIC and DOS prompts of the 1980s and 1990s, were the main method of interacting with computers. For routine computer use, these have largely been replaced with visual interfaces, which are easier to learn but offer less freedom. But if you know where to look, the languages are still there. One of them, _JavaScript_, is built into every modern web ((browser))—and is thus available on almost every device.   
+과거에는 언어 기반 인터페이스가 주 컴퓨터 상호작용 방법이었습니다. 1980년대와 1990년대의 BASIC 및 DOS 프롬프트가 그 예입니다. 그러나 컴퓨터 사용에 대해서는 이러한 인터페이스들이 주로 시각적 인터페이스로 대체되었습니다. 시각적 인터페이스는 배우기 쉽지만 자유도는 떨어집니다. 하지만 찾아보면 여전히 언어들이 있습니다. 그 중 하나인 JavaScript는 모든 현대 웹 브라우저에 내장되어 있으며, 따라서 거의 모든 기기에서 사용할 수 있습니다.
 
 {{indexsee "web browser", browser}}
 
