@@ -85,8 +85,7 @@ Some programmers believe that this complexity is best managed by using only a sm
 This is not only boring, it is ineffective. New problems often require new solutions. The field of programming is young and still developing rapidly, and it is varied enough to have room for wildly different approaches. There are many terrible mistakes to make in program design, and you should go ahead and make them at least once so that you understand them. A sense of what a good program looks like is developed with practice, not learned from a list of rules.   
 이것은 지루할 뿐만 아니라 비효율적입니다. 새로운 문제는 종종 새로운 해결책을 요구합니다. 프로그래밍 분야는 젊고 여전히 빠르게 발전하고 있으며, 극명하게 다른 접근 방식에도 충분한 여유가 있습니다. 프로그램 설계에서 많은 실수를 할 수 있으며, 그것들을 이해하기 위해 적어도 한 번은 실수를 해 보아야 합니다. 좋은 프로그램이 어떻게 보이는지에 대한 감각은 규칙 목록에서 배우는 것이 아니라 실습을 통해 발전됩니다.
 
-## Why language matters   
-## 왜 언어가 중요한가
+## Why language matters 왜 언어가 중요한가     
 
 {{index "programming language", "machine code", "binary data"}}
 
@@ -107,11 +106,14 @@ In the beginning, at the birth of computing, there were no programming languages
 
 {{index [programming, "history of"], "punch card", complexity}}
 
-This is a program to add the numbers from 1 to 10 together and print the result: `1 + 2 + ... + 10 = 55`. It could run on a simple hypothetical machine. To program early computers, it was necessary to set large arrays of switches in the right position or punch holes in strips of cardboard and feed them to the computer. You can imagine how tedious and error-prone this procedure was. Even writing simple programs required much cleverness and discipline. Complex ones were nearly inconceivable.
+This is a program to add the numbers from 1 to 10 together and print the result: `1 + 2 + ... + 10 = 55`. It could run on a simple hypothetical machine. To program early computers, it was necessary to set large arrays of switches in the right position or punch holes in strips of cardboard and feed them to the computer. You can imagine how tedious and error-prone this procedure was. Even writing simple programs required much cleverness and discipline. Complex ones were nearly inconceivable.   
+이것은 1부터 10까지의 숫자를 더하여 결과를 출력하는 프로그램입니다: 1 + 2 + ... + 10 = 55. 이것은 간단한 가상 머신에서 실행될 수 있습니다. 초기 컴퓨터를 프로그래밍하려면 큰 스위치 배열을 올바른 위치로 설정하거나, 판지 조각에 구멍을 뚫고 컴퓨터에 공급해야 했습니다. 이 절차가 얼마나 지루하고 오류 발생 가능성이 높은지 상상할 수 있습니다. 심지어 간단한 프로그램을 작성하는 것조차 많은 기교와 집중력이 필요했습니다. 복잡한 프로그램은 거의 상상하기 어려웠습니다.
 
 {{index bit, "wizard (mighty)"}}
 
-Of course, manually entering these arcane patterns of bits (the ones and zeros) did give the programmer a profound sense of being a mighty wizard. And that has to be worth something in terms of job satisfaction.
+Of course, manually entering these arcane patterns of bits (the ones and zeros) did give the programmer a profound sense of being a mighty wizard. And that has to be worth something in terms of job satisfaction.   
+물론, 이런 이진수(1과 0)의 불가해한 패턴을 수동으로 입력하는 것은 프로그래머에게 강력한 마법사가 된 느낌을 주었습니다. 이는 직업 만족도 측면에서 어떤 가치가 있는지에 대해 생각해 볼 만합니다.
+
 
 {{index memory, instruction}}
 
