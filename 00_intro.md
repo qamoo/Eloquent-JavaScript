@@ -36,51 +36,62 @@ At one point, language-based interfaces, such as the BASIC and DOS prompts of th
 
 {{indexsee "web browser", browser}}
 
-This book will try to make you familiar enough with this language to do useful and amusing things with it.
+This book will try to make you familiar enough with this language to do useful and amusing things with it.   
+이 책은 여러분이 이 언어를 충분히 익숙하게 만들어, 유용하고 재미있는 일을 할 수 있도록 노력할 것입니다.
 
 ## On programming
 
 {{index [programming, "difficulty of"]}}
 
-Besides explaining JavaScript, I will introduce the basic principles of programming. Programming, it turns out, is hard. The fundamental rules are simple and clear, but programs built on top of these rules tend to become complex enough to introduce their own rules and complexity. You're building your own maze, in a way, and you can easily get lost in it.
+Besides explaining JavaScript, I will introduce the basic principles of programming. Programming, it turns out, is hard. The fundamental rules are simple and clear, but programs built on top of these rules tend to become complex enough to introduce their own rules and complexity. You're building your own maze, in a way, and you can easily get lost in it.   
+JavaScript를 설명하는 것 외에도, 프로그래밍의 기본 원칙을 소개할 것입니다. 프로그래밍은 어렵습니다. 기본 규칙은 간단하고 명확하지만, 이러한 규칙 위에 구축된 프로그램들은 자체적인 규칙과 복잡성을 도입하여 복잡해집니다. 어느 정도로는 자신만의 미로를 만들고 있으며, 쉽게 그 속에서 길을 잃을 수 있습니다.
 
 {{index learning}}
 
-There will be times when reading this book feels terribly frustrating. If you are new to programming, there will be a lot of new material to digest. Much of this material will then be _combined_ in ways that require you to make additional connections.
+There will be times when reading this book feels terribly frustrating. If you are new to programming, there will be a lot of new material to digest. Much of this material will then be _combined_ in ways that require you to make additional connections.   
+이 책을 읽는 동안 가끔은 매우 좌절스러울 때가 있을 것입니다. 프로그래밍에 처음이라면, 소화해야 할 새로운 자료가 많을 것입니다. 이 자료의 많은 부분이 추가적인 연결을 만들도록 조합될 것입니다.
 
-It is up to you to make the necessary effort. When you are struggling to follow the book, do not jump to any conclusions about your own capabilities. You are fine—you just need to keep at it. Take a break, reread some material, and make sure you read and understand the example programs and ((exercises)). Learning is hard work, but everything you learn is yours and will make further learning easier.
+It is up to you to make the necessary effort. When you are struggling to follow the book, do not jump to any conclusions about your own capabilities. You are fine—you just need to keep at it. Take a break, reread some material, and make sure you read and understand the example programs and ((exercises)). Learning is hard work, but everything you learn is yours and will make further learning easier.   
+피할 수 없는 노력은 여러분에 달려 있습니다. 이 책을 따라가는 데 어려움을 겪을 때, 자신의 능력에 대한 결론을 바로 내리지 마십시오. 여러분은 괜찮습니다—그저 계속 노력해야 할 뿐입니다. 휴식을 취하고, 일부 자료를 다시 읽고, 예제 프로그램과 연습문제를 읽고 이해하는 것이 중요합니다. 배우는 것은 어렵지만, 배운 모든 것은 여러분의 것이며, 더 많은 학습을 쉽게 만들어 줄 것입니다.
 
 {{quote {author: "Ursula K. Le Guin", title: "The Left Hand of Darkness"}
 
 {{index "Le Guin, Ursula K."}}
 
-When action grows unprofitable, gather information; when information grows unprofitable, sleep.
-
+When action grows unprofitable, gather information; when information grows unprofitable, sleep.  
+행동이 더 이상 이익을 주지 않을 때에는 정보를 수집하십시오; 정보가 더 이상 이익을 주지 않을 때에는 잠을 자십시오.
 quote}}
 
 {{index [program, "nature of"], data}}
 
-A program is many things. It is a piece of text typed by a programmer, it is the directing force that makes the computer do what it does, it is data in the computer's memory, and at the same time it controls the actions performed on this memory. Analogies that try to compare programs to familiar objects tend to fall short. A superficially fitting one is to compare a program to a machine—lots of separate parts tend to be involved, and to make the whole thing tick, we have to consider the ways in which these parts interconnect and contribute to the operation of the whole.
+A program is many things. It is a piece of text typed by a programmer, it is the directing force that makes the computer do what it does, it is data in the computer's memory, and at the same time it controls the actions performed on this memory. Analogies that try to compare programs to familiar objects tend to fall short. A superficially fitting one is to compare a program to a machine—lots of separate parts tend to be involved, and to make the whole thing tick, we have to consider the ways in which these parts interconnect and contribute to the operation of the whole.   
+프로그램은 여러 가지로 이루어져 있습니다. 프로그래머가 입력한 텍스트 조각이며, 컴퓨터가 수행하는 작업을 지시하는 동력이기도 합니다. 또한 컴퓨터 메모리 내의 데이터이며, 동시에 이 메모리에서 수행되는 작업을 제어합니다. 프로그램을 친숙한 객체와 비교하려는 유사성은 종종 부족합니다. 얕은 유사성 중 하나는 프로그램을 기계와 비교하는 것입니다. 많은 독립적인 부품들이 관련되어 있으며, 전체 시스템을 작동시키기 위해 이러한 부품들이 어떻게 상호 연결되고 전체 작동에 기여하는지를 고려해야 합니다.
 
-A ((computer)) is a physical machine that acts as a host for these immaterial machines. Computers themselves can do only stupidly straightforward things. The reason they are so useful is that they do these things at an incredibly high ((speed)). A program can ingeniously combine an enormous number of these simple actions to do very complicated things.
+A ((computer)) is a physical machine that acts as a host for these immaterial machines. Computers themselves can do only stupidly straightforward things. The reason they are so useful is that they do these things at an incredibly high ((speed)). A program can ingeniously combine an enormous number of these simple actions to do very complicated things.   
+컴퓨터는 이러한 무형의 기계들의 호스트 역할을 하는 물리적 기계입니다. 컴퓨터 자체는 매우 단순한 일만 수행할 수 있습니다. 그들이 굉장히 유용한 이유는 이러한 일들을 굉장히 빠른 속도로 수행하기 때문입니다. 프로그램은 엄청난 수의 이러한 간단한 작업을 영리하게 조합하여 매우 복잡한 일을 수행할 수 있습니다.
 
 {{index [programming, "joy of"]}}
 
-A program is a building of thought. It is costless to build, it is weightless, and it grows easily under our typing hands. But as a program grows, so does its ((complexity)). The skill of programming is the skill of building programs that don't confuse yourself. The best programs are those that manage to do something interesting while still being easy to understand.
+A program is a building of thought. It is costless to build, it is weightless, and it grows easily under our typing hands. But as a program grows, so does its ((complexity)). The skill of programming is the skill of building programs that don't confuse yourself. The best programs are those that manage to do something interesting while still being easy to understand.   
+프로그램은 사고의 건축물입니다. 만들기는 무료이며, 무게가 없으며, 우리의 타이핑 손 아래에서 쉽게 자라납니다. 그러나 프로그램이 커질수록 복잡성도 커집니다. 프로그래밍의 기술은 자신을 혼란스럽게 하지 않는 프로그램을 만드는 기술입니다. 가장 좋은 프로그램은 여전히 이해하기 쉬운 동시에 흥미로운 작업을 수행하는 것입니다.
 
 {{index "programming style", "best practices"}}
 
-Some programmers believe that this complexity is best managed by using only a small set of well-understood techniques in their programs. They have composed strict rules ("best practices") prescribing the form programs should have and carefully stay within their safe little zone.
+Some programmers believe that this complexity is best managed by using only a small set of well-understood techniques in their programs. They have composed strict rules ("best practices") prescribing the form programs should have and carefully stay within their safe little zone.   
+일부 프로그래머는 복잡성을 가장 잘 관리하는 방법으로 프로그램에서 잘 이해된 소수의 기술만 사용하는 것이 좋다고 믿습니다. 그들은 프로그램이 가져야 할 형태에 대한 엄격한 규칙("최상의 관행")을 작성하여 안전한 작은 영역 내에서 주의 깊게 머무릅니다.
 
 {{index experiment}}
 
-This is not only boring, it is ineffective. New problems often require new solutions. The field of programming is young and still developing rapidly, and it is varied enough to have room for wildly different approaches. There are many terrible mistakes to make in program design, and you should go ahead and make them at least once so that you understand them. A sense of what a good program looks like is developed with practice, not learned from a list of rules.
+This is not only boring, it is ineffective. New problems often require new solutions. The field of programming is young and still developing rapidly, and it is varied enough to have room for wildly different approaches. There are many terrible mistakes to make in program design, and you should go ahead and make them at least once so that you understand them. A sense of what a good program looks like is developed with practice, not learned from a list of rules.   
+이것은 지루할 뿐만 아니라 비효율적입니다. 새로운 문제는 종종 새로운 해결책을 요구합니다. 프로그래밍 분야는 젊고 여전히 빠르게 발전하고 있으며, 극명하게 다른 접근 방식에도 충분한 여유가 있습니다. 프로그램 설계에서 많은 실수를 할 수 있으며, 그것들을 이해하기 위해 적어도 한 번은 실수를 해 보아야 합니다. 좋은 프로그램이 어떻게 보이는지에 대한 감각은 규칙 목록에서 배우는 것이 아니라 실습을 통해 발전됩니다.
 
-## Why language matters
+## Why language matters   
+## 왜 언어가 중요한가
 
 {{index "programming language", "machine code", "binary data"}}
 
-In the beginning, at the birth of computing, there were no programming languages. Programs looked something like this:
+In the beginning, at the birth of computing, there were no programming languages. Programs looked something like this:   
+처음에는 컴퓨팅의 탄생 시에 프로그래밍 언어가 없었습니다. 프로그램은 이렇게 보였습니다:
 
 ```{lang: null}
 00110001 00000000 00000000
