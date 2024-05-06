@@ -117,21 +117,32 @@ Of course, manually entering these arcane patterns of bits (the ones and zeros) 
 
 {{index memory, instruction}}
 
-Each line of the previous program contains a single instruction. It could be written in English like this:
+Each line of the previous program contains a single instruction. It could be written in English like this:   
+앞선 프로그램의 각 줄은 한 개의 명령을 포함하고 있습니다. 다음과 같이 작성할 수 있습니다:
 
- 1. Store the number 0 in memory location 0.
- 2. Store the number 1 in memory location 1.
- 3. Store the value of memory location 1 in memory location 2.
- 4. Subtract the number 11 from the value in memory location 2.
- 5. If the value in memory location 2 is the number 0, continue with instruction 9.
- 6. Add the value of memory location 1 to memory location 0.
- 7. Add the number 1 to the value of memory location 1.
- 8. Continue with instruction 3.
- 9. Output the value of memory location 0.
 
+ 1. Store the number 0 in memory location 0.   
+ 1. 메모리 위치 0에 숫자 0을 저장합니다.   
+ 2. Store the number 1 in memory location 1.   
+ 2. 메모리 위치 1에 숫자 1을 저장합니다.   
+ 3. Store the value of memory location 1 in memory location 2.   
+ 3. 메모리 위치 1의 값을 메모리 위치 2에 저장합니다.   
+ 4. Subtract the number 11 from the value in memory location 2.   
+ 4. 메모리 위치 2의 값에서 숫자 11을 빼냅니다.   
+ 5. If the value in memory location 2 is the number 0, continue with instruction 9.   
+ 5. 메모리 위치 2의 값이 숫자 0이면, 9번 명령으로 계속합니다.   
+ 6. Add the value of memory location 1 to memory location 0.   
+ 6. 메모리 위치 0에 메모리 위치 1의 값을 더합니다.   
+ 7. Add the number 1 to the value of memory location 1.   
+ 7. 메모리 위치 1의 값에 숫자 1을 더합니다.   
+ 8. Continue with instruction 3.   
+ 8. 3번 명령으로 계속합니다.   
+ 9. Output the value of memory location 0.   
+ 9. 메모리 위치 0의 값을 출력합니다.   
 {{index readability, naming, binding}}
 
-Although that is already more readable than the soup of bits, it is still rather obscure. Using names instead of numbers for the instructions and memory locations helps:
+Although that is already more readable than the soup of bits, it is still rather obscure. Using names instead of numbers for the instructions and memory locations helps:   
+비록 숫자 대신에 이름을 사용한 지시문과 메모리 위치를 사용하면 이해하기 쉽지만, 여전히 상당히 난해합니다.
 
 ```{lang: "null"}
  Set “total” to 0.
