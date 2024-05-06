@@ -160,9 +160,11 @@ Although that is already more readable than the soup of bits, it is still rather
 
 {{index loop, jump, "summing example"}}
 
-Can you see how the program works at this point? The first two lines give two memory locations their starting values: `total` will be used to build up the result of the computation, and `count` will keep track of the number that we are currently looking at. The lines using `compare` are probably the most confusing ones. The program wants to see whether `count` is equal to 11 to decide whether it can stop running. Because our hypothetical machine is rather primitive, it can only test whether a number is zero and make a decision based on that. It therefore uses the memory location labeled `compare` to compute the value of `count - 11` and makes a decision based on that value. The next two lines add the value of `count` to the result and increment `count` by 1 every time the program decides that `count` is not 11 yet.
+Can you see how the program works at this point? The first two lines give two memory locations their starting values: `total` will be used to build up the result of the computation, and `count` will keep track of the number that we are currently looking at. The lines using `compare` are probably the most confusing ones. The program wants to see whether `count` is equal to 11 to decide whether it can stop running. Because our hypothetical machine is rather primitive, it can only test whether a number is zero and make a decision based on that. It therefore uses the memory location labeled `compare` to compute the value of `count - 11` and makes a decision based on that value. The next two lines add the value of `count` to the result and increment `count` by 1 every time the program decides that `count` is not 11 yet.   
+위 프로그램이 어떻게 작동하는지 아시겠나요? 첫 두 줄은 두 개의 메모리 위치에 초기값을 할당합니다. total은 계산 결과를 누적할 때 사용되고, count는 현재 검사 중인 숫자를 추적합니다. compare를 사용하는 줄들이 아마도 가장 혼란스러울 것입니다. 프로그램은 count가 11인지 여부를 확인하여 실행을 멈출지 결정하려고 합니다. 우리의 가상 머신이 상당히 원시적이기 때문에, 숫자가 0인지 여부만 테스트하고 그 값을 기반으로 결정할 수 있습니다. 따라서 프로그램은 count - 11의 값을 계산하고 그 값에 따라 결정하기 위해 compare로 레이블된 메모리 위치를 사용합니다. 다음 두 줄은 프로그램이 count가 아직 11이 아니라고 판단할 때마다 결과에 count 값을 추가하고 count를 1씩 증가시킵니다.
 
-Here is the same program in JavaScript:
+Here is the same program in JavaScript:   
+다음은 JavaScript로 작성된 동일한 프로그램입니다:
 
 ```
 let total = 0, count = 1;
@@ -176,15 +178,18 @@ console.log(total);
 
 {{index "while loop", loop, [braces, block]}}
 
-This version gives us a few more improvements. Most importantly, there is no need to specify the way we want the program to jump back and forth anymore—the `while` construct takes care of that. It continues executing the block (wrapped in braces) below it as long as the condition it was given holds. That condition is `count <= 10`, which means “the count is less than or equal to 10”. We no longer have to create a temporary value and compare that to zero, which was just an uninteresting detail. Part of the power of programming languages is that they can take care of uninteresting details for us.
+This version gives us a few more improvements. Most importantly, there is no need to specify the way we want the program to jump back and forth anymore—the `while` construct takes care of that. It continues executing the block (wrapped in braces) below it as long as the condition it was given holds. That condition is `count <= 10`, which means “the count is less than or equal to 10”. We no longer have to create a temporary value and compare that to zero, which was just an uninteresting detail. Part of the power of programming languages is that they can take care of uninteresting details for us.   
+이 버전은 몇 가지 개선을 제공합니다. 가장 중요한 것은 이제 프로그램이 앞뒤로 뛰어다니는 방법을 명시할 필요가 없다는 것입니다 - while 구조가 처리를 도와줍니다. 주어진 조건이 유지되는 한 아래에 있는 블록(중괄호로 둘러싸인)을 계속 실행합니다. 그 조건은 count <= 10이며, 이는 "카운트가 10보다 작거나 같다"는 뜻입니다. 이제 더 이상 우리는 임시값을 만들고 그것을 0과 비교할 필요가 없으며, 그것은 그저 흥미로운 세부 사항이었습니다. 프로그래밍 언어의 일부인 흥미로운 세부 사항을 대신 처리할 수 있다는 것이 프로그래밍 언어의 힘 중 하나입니다.
 
 {{index "console.log"}}
 
-At the end of the program, after the `while` construct has finished, the `console.log` operation is used to write out the result.
+At the end of the program, after the `while` construct has finished, the `console.log` operation is used to write out the result.   
+프로그램의 끝에서 while 구조가 끝난 후 console.log 작업이 사용되어 결과를 출력합니다.
 
 {{index "sum function", "range function", abstraction, function}}
 
-Finally, here is what the program could look like if we happened to have the convenient operations `range` and `sum` available, which respectively create a ((collection)) of numbers within a range and compute the sum of a collection of numbers:
+Finally, here is what the program could look like if we happened to have the convenient operations `range` and `sum` available, which respectively create a ((collection)) of numbers within a range and compute the sum of a collection of numbers:   
+마지막으로, 우연히 range 및 sum이라는 편리한 작업이 있는 경우 프로그램은 다음과 같이 보일 수 있습니다. range는 범위 내의 숫자 집합을 생성하고, sum은 숫자 집합의 합을 계산합니다.
 
 ```{startCode: true}
 console.log(sum(range(1, 10)));
