@@ -198,13 +198,16 @@ console.log(sum(range(1, 10)));
 
 {{index readability}}
 
-The moral of this story is that the same program can be expressed in both long and short, unreadable and readable ways. The first version of the program was extremely obscure, whereas this last one is almost English: `log` the `sum` of the `range` of numbers from 1 to 10. (We will see in [later chapters](data) how to define operations like `sum` and `range`.)
+The moral of this story is that the same program can be expressed in both long and short, unreadable and readable ways. The first version of the program was extremely obscure, whereas this last one is almost English: `log` the `sum` of the `range` of numbers from 1 to 10. (We will see in [later chapters](data) how to define operations like `sum` and `range`.)   
+이 이야기의 교훈은 동일한 프로그램이 긴 방법과 짧은 방법, 가독성이 낮은 방법과 가독성이 높은 방법으로 표현될 수 있다는 것입니다. 첫 번째 버전의 프로그램은 매우 난해했지만, 이 마지막 버전은 거의 영어와 같습니다: 1부터 10까지의 숫자 범위(range)의 합(sum)을 기록(log)합니다. (나중 장에서 sum 및 range와 같은 작업을 정의하는 방법을 살펴보겠습니다.)
 
 {{index ["programming language", "power of"], composability}}
 
-A good programming language helps the programmer by allowing them to talk about the actions that the computer has to perform on a higher level. It helps omit details, provides convenient building blocks (such as `while` and `console.log`), allows you to define your own building blocks (such as `sum` and `range`), and makes those blocks easy to compose.
+A good programming language helps the programmer by allowing them to talk about the actions that the computer has to perform on a higher level. It helps omit details, provides convenient building blocks (such as `while` and `console.log`), allows you to define your own building blocks (such as `sum` and `range`), and makes those blocks easy to compose.   
+좋은 프로그래밍 언어는 프로그래머가 컴퓨터가 수행해야 하는 작업에 대해 더 높은 수준에서 이야기할 수 있도록 돕습니다. 세부 사항을 생략하도록 도와주며, while 및 console.log와 같은 편리한 구성 요소를 제공하고, 사용자 정의 구성 요소 (예: sum 및 range)를 정의하고 해당 블록을 쉽게 조합할 수 있도록 만듭니다.
 
 ## What is JavaScript?
+## 자바스크립트란 무엇인가?
 
 {{index history, Netscape, browser, "web application", JavaScript, [JavaScript, "history of"], "World Wide Web"}}
 
@@ -212,47 +215,59 @@ A good programming language helps the programmer by allowing them to talk about 
 
 {{indexsee Web, "World Wide Web"}}
 
-JavaScript was introduced in 1995 as a way to add programs to web pages in the Netscape Navigator browser. The language has since been adopted by all other major graphical web browsers. It has made modern web applications possible—that is, applications with which you can interact directly without doing a page reload for every action. JavaScript is also used in more traditional websites to provide various forms of interactivity and cleverness.
+JavaScript was introduced in 1995 as a way to add programs to web pages in the Netscape Navigator browser. The language has since been adopted by all other major graphical web browsers. It has made modern web applications possible—that is, applications with which you can interact directly without doing a page reload for every action. JavaScript is also used in more traditional websites to provide various forms of interactivity and cleverness.   
+JavaScript는 1995년에 넷스케이프 네비게이터 브라우저에 프로그램을 웹 페이지에 추가하는 방법으로 소개되었습니다. 그 이후로 이 언어는 모든 주요 그래픽 웹 브라우저에서 채택되었습니다. 이를 통해 현대의 웹 애플리케이션, 즉 페이지를 다시로드하지 않고도 직접 상호 작용할 수 있는 애플리케이션을 만들 수 있게 되었습니다. JavaScript는 더 전통적인 웹 사이트에서도 다양한 상호 작용과 기능을 제공하는 데 사용됩니다.
 
 {{index Java, naming}}
 
-It is important to note that JavaScript has almost nothing to do with the programming language named Java. The similar name was inspired by marketing considerations rather than good judgment. When JavaScript was being introduced, the Java language was being heavily marketed and was gaining popularity. Someone thought it was a good idea to try to ride along on this success. Now we are stuck with the name.
+It is important to note that JavaScript has almost nothing to do with the programming language named Java. The similar name was inspired by marketing considerations rather than good judgment. When JavaScript was being introduced, the Java language was being heavily marketed and was gaining popularity. Someone thought it was a good idea to try to ride along on this success. Now we are stuck with the name.  
+JavaScript가 거의 아무런 관련이 없는 Java라는 프로그래밍 언어와 혼동되지 않도록 주의해야 합니다. 비슷한 이름은 좋은 판단이 아니라 마케팅 고려 사항에서 영감을 받았습니다. JavaScript가 소개될 때 Java 언어가 강력하게 마케팅되고 인기를 얻고 있었습니다. 누군가는 이 성공에 끼어드는 것이 좋은 생각이라고 생각했습니다. 이제 우리는 그 이름으로 곤란해지고 있습니다.
 
 {{index ECMAScript, compatibility}}
 
-After its adoption outside of Netscape, a ((standard)) document was written to describe the way the JavaScript language should work so that the various pieces of software that claimed to support JavaScript could make sure they actually provided the same language. This is called the ECMAScript standard, after the Ecma International organization that conducted the standardization. In practice, the terms ECMAScript and JavaScript can be used interchangeably—they are two names for the same language.
+After its adoption outside of Netscape, a ((standard)) document was written to describe the way the JavaScript language should work so that the various pieces of software that claimed to support JavaScript could make sure they actually provided the same language. This is called the ECMAScript standard, after the Ecma International organization that conducted the standardization. In practice, the terms ECMAScript and JavaScript can be used interchangeably—they are two names for the same language.   
+넷스케이프 밖에서 사용되기 시작한 후, JavaScript를 지원한다고 주장하는 다양한 소프트웨어가 실제로 동일한 언어를 제공하는지 확인할 수 있도록 JavaScript 언어가 작동하는 방식을 설명하는 표준 문서가 작성되었습니다. 이것은 Ecma International 조직이 표준화를 수행한 후에 ECMAScript 표준이라고 합니다. 실제로 ECMAScript와 JavaScript 용어는 서로 교환하여 사용할 수 있습니다 - 이것들은 동일한 언어에 대한 두 가지 이름입니다.
 
 {{index [JavaScript, "weaknesses of"], debugging}}
 
-There are those who will say _terrible_ things about JavaScript. Many of these things are true. When I was required to write something in JavaScript for the first time, I quickly came to despise it. It would accept almost anything I typed but interpret it in a way that was completely different from what I meant. This had a lot to do with the fact that I did not have a clue what I was doing, of course, but there is a real issue here: JavaScript is ridiculously liberal in what it allows. The idea behind this design was that it would make programming in JavaScript easier for beginners. In actuality, it mostly makes finding problems in your programs harder because the system will not point them out to you.
+There are those who will say _terrible_ things about JavaScript. Many of these things are true. When I was required to write something in JavaScript for the first time, I quickly came to despise it. It would accept almost anything I typed but interpret it in a way that was completely different from what I meant. This had a lot to do with the fact that I did not have a clue what I was doing, of course, but there is a real issue here: JavaScript is ridiculously liberal in what it allows. The idea behind this design was that it would make programming in JavaScript easier for beginners. In actuality, it mostly makes finding problems in your programs harder because the system will not point them out to you.   
+JavaScript에 대해 끔찍한 이야기를 할 것이라고 말하는 사람들이 있습니다. 이 이야기들 중 많은 것이 사실입니다. 처음으로 JavaScript로 무언가를 작성해야 할 때, 나는 빨리 그것을 혐오하기 시작했습니다. 거의 내가 입력한 모든 것을 받아들이지만, 내 의도와는 전혀 다른 방식으로 해석했습니다. 이것은 물론 내가 무엇을 하는지 전혀 모르는 상태에서 일했기 때문에 많이 영향을 미쳤지만, 여기에는 실제 문제가 있습니다: JavaScript는 허용 범위가 너무 넓습니다. 이 디자인의 아이디어는 JavaScript로 프로그래밍을 쉽게 만들 것이라는 것이었습니다. 실제로는, 이것은 주로 프로그램에서 문제를 찾는 것을 더 어렵게 만들었습니다. 왜냐하면 시스템이 그것들을 지적해 주지 않기 때문입니다.
 
 {{index [JavaScript, "flexibility of"], flexibility}}
 
-This flexibility also has its advantages, though. It leaves room for techniques that are impossible in more rigid languages and makes for a pleasant, informal style of programming. After ((learning)) the language properly and working with it for a while, I have come to actually _like_ JavaScript.
+This flexibility also has its advantages, though. It leaves room for techniques that are impossible in more rigid languages and makes for a pleasant, informal style of programming. After ((learning)) the language properly and working with it for a while, I have come to actually _like_ JavaScript.   
+그러나 이 유연성은 장점도 가지고 있습니다. 더 엄격한 언어에서는 불가능한 기술들에 대한 여유를 제공하며, 즐거운 비공식적인 프로그래밍 스타일을 만듭니다. 언어를 제대로 배우고 일정 기간동안 작업한 후에, 실제로 JavaScript를 좋아하게 되었습니다.
 
 {{index future, [JavaScript, "versions of"], ECMAScript, "ECMAScript 6"}}
 
-There have been several versions of JavaScript. ECMAScript version 3 was the widely supported version during JavaScript's ascent to dominance, roughly between 2000 and 2010. During this time, work was underway on an ambitious version 4, which planned a number of radical improvements and extensions to the language. Changing a living, widely used language in such a radical way turned out to be politically difficult, and work on the version 4 was abandoned in 2008. A much less ambitious version 5, which made only some uncontroversial improvements, came out in 2009. In 2015, version 6 came out, a major update that included some of the ideas planned for version 4. Since then we've had new, small updates every year.
+There have been several versions of JavaScript. ECMAScript version 3 was the widely supported version during JavaScript's ascent to dominance, roughly between 2000 and 2010. During this time, work was underway on an ambitious version 4, which planned a number of radical improvements and extensions to the language. Changing a living, widely used language in such a radical way turned out to be politically difficult, and work on the version 4 was abandoned in 2008. A much less ambitious version 5, which made only some uncontroversial improvements, came out in 2009. In 2015, version 6 came out, a major update that included some of the ideas planned for version 4. Since then we've had new, small updates every year.   
+JavaScript에는 여러 버전이 있었습니다. ECMAScript 버전 3은 JavaScript가 지배적으로 사용되는 시기, 대략 2000년부터 2010년까지 널리 지원되는 버전이었습니다. 이 기간 동안 혁신적인 개선과 언어 확장을 계획한 대규모 버전 4의 작업이 진행되었습니다. 그러나 널리 사용되는 언어를 이렇게 급진적으로 변경하는 것은 정치적으로 어려운 일이었고, 버전 4에 대한 작업은 2008년에 중단되었습니다. 2009년에는 일부 논란되지 않는 개선만을 수행한 훨씬 덜 야심찬 버전 5가 출시되었습니다. 2015년에는 버전 6이 출시되었는데, 이는 버전 4에서 계획된 아이디어 중 일부를 포함한 중요한 업데이트였습니다. 그 이후로 매년 새로운 작은 업데이트가 있었습니다.
 
-The fact that JavaScript is evolving means that browsers have to constantly keep up. If you're using an older browser, it may not support every feature. The language designers are careful to not make any changes that could break existing programs, so new browsers can still run old programs. In this book, I'm using the 2023 version of JavaScript.
+The fact that JavaScript is evolving means that browsers have to constantly keep up. If you're using an older browser, it may not support every feature. The language designers are careful to not make any changes that could break existing programs, so new browsers can still run old programs. In this book, I'm using the 2023 version of JavaScript.   
+JavaScript가 계속 발전하고 있다는 사실은 브라우저가 계속해서 따라가야 함을 의미합니다. 오래된 브라우저를 사용하고 있다면 모든 기능을 지원하지 않을 수 있습니다. 언어 설계자들은 기존 프로그램을 깨뜨릴 수 있는 변경 사항을 조심스럽게 피하고 있으므로 새로운 브라우저에서도 이전 프로그램을 실행할 수 있습니다. 이 책에서는 2023년 버전의 JavaScript를 사용하고 있습니다.
 
 {{index [JavaScript, "uses of"]}}
 
-Web browsers are not the only platforms on which JavaScript is used. Some databases, such as MongoDB and CouchDB, use JavaScript as their scripting and query language. Several platforms for desktop and server programming, most notably the ((Node.js)) project (the subject of [Chapter ?](node)), provide an environment for programming JavaScript outside of the browser.
+Web browsers are not the only platforms on which JavaScript is used. Some databases, such as MongoDB and CouchDB, use JavaScript as their scripting and query language. Several platforms for desktop and server programming, most notably the ((Node.js)) project (the subject of [Chapter ?](node)), provide an environment for programming JavaScript outside of the browser.   
+웹 브라우저는 JavaScript가 사용되는 유일한 플랫폼이 아닙니다. MongoDB 및 CouchDB와 같은 일부 데이터베이스는 자신의 스크립팅 및 쿼리 언어로 JavaScript를 사용합니다. 노드.js 프로젝트(제20장의 주제)와 같은 여러 데스크톱 및 서버 프로그래밍 플랫폼은 브라우저 외부에서 JavaScript 프로그래밍 환경을 제공합니다.
 
 ## Code, and what to do with it
+## 코드와 그 처리 방법
 
 {{index "reading code", "writing code"}}
 
-_Code_ is the text that makes up programs. Most chapters in this book contain quite a lot of code. I believe reading code and writing ((code)) are indispensable parts of ((learning)) to program. Try to not just glance over the examples—read them attentively and understand them. This may be slow and confusing at first, but I promise that you'll quickly get the hang of it. The same goes for the ((exercises)). Don't assume you understand them until you've actually written a working solution.
+_Code_ is the text that makes up programs. Most chapters in this book contain quite a lot of code. I believe reading code and writing ((code)) are indispensable parts of ((learning)) to program. Try to not just glance over the examples—read them attentively and understand them. This may be slow and confusing at first, but I promise that you'll quickly get the hang of it. The same goes for the ((exercises)). Don't assume you understand them until you've actually written a working solution.   
+코드는 프로그램을 구성하는 텍스트입니다. 이 책의 대부분의 장에는 상당한 양의 코드가 포함되어 있습니다. 코드를 읽고 쓰는 것은 프로그래밍을 배우는 데 필수적인 부분이라고 생각합니다. 예제를 흘겨보지 말고 주의 깊게 읽고 이해하십시오. 처음에는 느리고 혼란스러울 수 있지만, 빠르게 적응할 것을 약속합니다. 연습 문제도 마찬가지입니다. 실제로 작동하는 해결책을 작성할 때까지 이해했다고 가정하지 마십시오.
 
 {{index interpretation}}
 
-I recommend you try your solutions to exercises in an actual JavaScript interpreter. That way, you'll get immediate feedback on whether what you are doing is working, and, I hope, you'll be tempted to ((experiment)) and go beyond the exercises.
+I recommend you try your solutions to exercises in an actual JavaScript interpreter. That way, you'll get immediate feedback on whether what you are doing is working, and, I hope, you'll be tempted to ((experiment)) and go beyond the exercises.   
+연습 문제의 해결책을 실제 JavaScript 인터프리터에서 시도하는 것을 권장합니다. 이렇게 하면 작업 중인 것이 작동하는지 즉시 확인할 수 있으며, 희망컨대 실험을 해보고 연습을 넘어서기를 동기부여 받을 것입니다.
 
 {{if interactive
 
-When reading this book in your browser, you can edit (and run) all example programs by clicking them.
+When reading this book in your browser, you can edit (and run) all example programs by clicking them.   
+이 책을 브라우저에서 읽을 때, 모든 예제 프로그램을 클릭하여 편집하고(실행할) 수 있습니다.
 
 if}}
 
@@ -266,7 +281,8 @@ if}}
 
 {{index "developer tools", "JavaScript console"}}
 
-Running the programs defined in this book outside of the book's website requires some care. Many examples stand on their own and should work in any JavaScript environment. But code in later chapters is often written for a specific environment (the browser or Node.js) and can run only there. In addition, many chapters define bigger programs, and the pieces of code that appear in them depend on each other or on external files. The [sandbox](https://eloquentjavascript.net/code) on the website provides links to ZIP files containing all the scripts and data files necessary to run the code for a given chapter.
+Running the programs defined in this book outside of the book's website requires some care. Many examples stand on their own and should work in any JavaScript environment. But code in later chapters is often written for a specific environment (the browser or Node.js) and can run only there. In addition, many chapters define bigger programs, and the pieces of code that appear in them depend on each other or on external files. The [sandbox](https://eloquentjavascript.net/code) on the website provides links to ZIP files containing all the scripts and data files necessary to run the code for a given chapter.   
+이 책에서 정의된 프로그램을 책의 웹사이트 외부에서 실행하려면 몇 가지 주의가 필요합니다. 많은 예제는 독립적으로 실행될 수 있으며 어떤 JavaScript 환경에서든 작동해야 합니다. 그러나 후반 장의 코드는 종종 특정 환경(브라우저 또는 노드.js)을 위해 작성되었으며 해당 환경에서만 실행될 수 있습니다. 또한 많은 장에서는 큰 프로그램을 정의하고 있으며, 해당 프로그램에 나타나는 코드 조각은 서로 또는 외부 파일에 종속될 수 있습니다. 웹사이트의 샌드박스는 특정 장의 코드를 실행하기 위해 필요한 모든 스크립트 및 데이터 파일이 포함된 ZIP 파일 링크를 제공합니다.
 
 ## Overview of this book
 
