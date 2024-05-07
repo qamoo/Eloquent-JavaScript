@@ -306,12 +306,12 @@ Finally, [Chapter ?](fast) describes some of the considerations that come up whe
 마지막으로, 제21장에서는 JavaScript 프로그램을 속도를 최적화할 때 고려해야 할 몇 가지 사항을 설명합니다.
 if}}
 
-## Typographic conventions
+## Typographic conventions 작성 관례
 
 {{index "factorial function"}}
 
-In this book, text written in a `monospaced` font will represent elements of programs. Sometimes these are self-sufficient fragments, and sometimes they just refer to part of a nearby program. Programs (of which you have already seen a few) are written as follows:
-
+In this book, text written in a `monospaced` font will represent elements of programs. Sometimes these are self-sufficient fragments, and sometimes they just refer to part of a nearby program. Programs (of which you have already seen a few) are written as follows:   
+이 책에서, 'monospaced' 글꼴로 작성된 텍스트는 프로그램 요소를 나타냅니다. 때로는 이들이 독립적인 조각이며, 때로는 주변 프로그램의 일부를 참조할 뿐입니다. 프로그램(이미 몇 가지를 보았습니다)은 다음과 같이 작성됩니다:
 ```
 function factorial(n) {
   if (n == 0) {
@@ -324,7 +324,8 @@ function factorial(n) {
 
 {{index "console.log"}}
 
-Sometimes, to show the output that a program produces, the expected output is written after it, with two slashes and an arrow in front.
+Sometimes, to show the output that a program produces, the expected output is written after it, with two slashes and an arrow in front.   
+때로는 프로그램이 생성하는 출력물을 보여주기 위해, 예상 출력이 프로그램 뒤에 쓰여지며, 이를 위해 두 개의 슬래시와 화살표가 앞에 붙습니다.
 
 ```
 console.log(factorial(8));
@@ -332,3 +333,4 @@ console.log(factorial(8));
 ```
 
 Good luck!
+행운을 빕니다.
