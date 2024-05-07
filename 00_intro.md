@@ -251,8 +251,7 @@ JavaScript가 계속 발전하고 있다는 사실은 브라우저가 계속해�
 Web browsers are not the only platforms on which JavaScript is used. Some databases, such as MongoDB and CouchDB, use JavaScript as their scripting and query language. Several platforms for desktop and server programming, most notably the ((Node.js)) project (the subject of [Chapter ?](node)), provide an environment for programming JavaScript outside of the browser.   
 웹 브라우저는 JavaScript가 사용되는 유일한 플랫폼이 아닙니다. MongoDB 및 CouchDB와 같은 일부 데이터베이스는 자신의 스크립팅 및 쿼리 언어로 JavaScript를 사용합니다. 노드.js 프로젝트(제20장의 주제)와 같은 여러 데스크톱 및 서버 프로그래밍 플랫폼은 브라우저 외부에서 JavaScript 프로그래밍 환경을 제공합니다.
 
-## Code, and what to do with it
-## 코드와 그 처리 방법
+## Code, and what to do with it / 코드와 그 처리 방법
 
 {{index "reading code", "writing code"}}
 
@@ -284,9 +283,10 @@ if}}
 Running the programs defined in this book outside of the book's website requires some care. Many examples stand on their own and should work in any JavaScript environment. But code in later chapters is often written for a specific environment (the browser or Node.js) and can run only there. In addition, many chapters define bigger programs, and the pieces of code that appear in them depend on each other or on external files. The [sandbox](https://eloquentjavascript.net/code) on the website provides links to ZIP files containing all the scripts and data files necessary to run the code for a given chapter.   
 이 책에서 정의된 프로그램을 책의 웹사이트 외부에서 실행하려면 몇 가지 주의가 필요합니다. 많은 예제는 독립적으로 실행될 수 있으며 어떤 JavaScript 환경에서든 작동해야 합니다. 그러나 후반 장의 코드는 종종 특정 환경(브라우저 또는 노드.js)을 위해 작성되었으며 해당 환경에서만 실행될 수 있습니다. 또한 많은 장에서는 큰 프로그램을 정의하고 있으며, 해당 프로그램에 나타나는 코드 조각은 서로 또는 외부 파일에 종속될 수 있습니다. 웹사이트의 샌드박스는 특정 장의 코드를 실행하기 위해 필요한 모든 스크립트 및 데이터 파일이 포함된 ZIP 파일 링크를 제공합니다.
 
-## Overview of this book
+## Overview of this book / 이 책 개요
 
-This book contains roughly three parts. The first 12 chapters discuss the JavaScript language. The next seven chapters are about web ((browsers)) and the way JavaScript is used to program them. Finally, two chapters are devoted to ((Node.js)), another environment to program JavaScript in. There are five _project chapters_ in the book that describe larger example programs to give you a taste of actual programming.
+This book contains roughly three parts. The first 12 chapters discuss the JavaScript language. The next seven chapters are about web ((browsers)) and the way JavaScript is used to program them. Finally, two chapters are devoted to ((Node.js)), another environment to program JavaScript in. There are five _project chapters_ in the book that describe larger example programs to give you a taste of actual programming.   
+이 책에는 대략 세 부분이 있습니다. 처음 12장은 JavaScript 언어에 대해 다룹니다. 그 다음 일곱 장은 웹 브라우저와 JavaScript가 프로그래밍되는 방식에 대해 다룹니다. 마지막으로, 노드.js에서 JavaScript를 프로그래밍하는 또 다른 환경에 대해 두 장이 할애되어 있습니다. 책에는 실제 프로그래밍을 경험해 볼 수 있는 큰 예제 프로그램을 설명하는 다섯 개의 프로젝트 장이 있습니다.
 
 The language part of the book starts with four chapters that introduce the basic structure of the JavaScript language. They discuss [control structures](program_structure) (such as the `while` word you saw in this introduction), [functions](functions) (writing your own building blocks), and [data structures](data). After these, you will be able to write basic programs. Next, Chapters [?](higher_order) and [?](object) introduce techniques to use functions and objects to write more _abstract_ code and keep complexity under control.
 
