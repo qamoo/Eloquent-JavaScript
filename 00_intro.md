@@ -291,16 +291,19 @@ This book contains roughly three parts. The first 12 chapters discuss the JavaSc
 The language part of the book starts with four chapters that introduce the basic structure of the JavaScript language. They discuss [control structures](program_structure) (such as the `while` word you saw in this introduction), [functions](functions) (writing your own building blocks), and [data structures](data). After these, you will be able to write basic programs. Next, Chapters [?](higher_order) and [?](object) introduce techniques to use functions and objects to write more _abstract_ code and keep complexity under control.   
 책의 언어 부분은 JavaScript 언어의 기본 구조를 소개하는 네 장으로 시작합니다. 이 장들에서는 [제어 구조](program_structure)(이 소개에서 본 while과 같은 단어), [함수](functions)(자신의 구성 요소 작성), 그리고 [데이터 구조](data)에 대해 다룹니다. 이후에는 기본 프로그램을 작성할 수 있게 될 것입니다. 그 다음 [5장](higher_order)과 [6장](object)에서는 함수와 객체를 사용하여 더 추상적인 코드를 작성하고 복잡성을 관리하는 기술을 소개합니다.
 
-After a [first project chapter](robot) that builds a crude delivery robot, the language part of the book continues with chapters on [error handling and bug fixing](error), [regular expressions](regexp) (an important tool for working with text), [modularity](modules) (another defense against complexity), and [asynchronous programming](async) (dealing with events that take time). The [second project chapter](language), where we implement a programming language, concludes the first part of the book.
+After a [first project chapter](robot) that builds a crude delivery robot, the language part of the book continues with chapters on [error handling and bug fixing](error), [regular expressions](regexp) (an important tool for working with text), [modularity](modules) (another defense against complexity), and [asynchronous programming](async) (dealing with events that take time). The [second project chapter](language), where we implement a programming language, concludes the first part of the book.   
+첫 번째 프로젝트 장에서는 조잡한 배송 로봇을 구축한 후, 책의 언어 부분은 오류 처리와 버그 수정, 정규 표현식(텍스트 작업에 중요한 도구), 모듈화(복잡성에 대한 또 다른 방어), 그리고 비동기 프로그래밍(시간이 걸리는 이벤트 처리)에 관한 장들로 계속됩니다. 프로그래밍 언어를 구현하는 두 번째 프로젝트 장은 책의 첫 번째 부분을 마무리합니다.
 
-The second part of the book, Chapters [?](browser) to [?](paint), describes the tools that browser JavaScript has access to. You'll learn to display things on the screen (Chapters [?](dom) and [?](canvas)), respond to user input ([Chapter ?](event)), and communicate over the network ([Chapter ?](http)). There are again two project chapters in this part, building a [platform game](game) and a [pixel paint program](paint).
+The second part of the book, Chapters [?](browser) to [?](paint), describes the tools that browser JavaScript has access to. You'll learn to display things on the screen (Chapters [?](dom) and [?](canvas)), respond to user input ([Chapter ?](event)), and communicate over the network ([Chapter ?](http)). There are again two project chapters in this part, building a [platform game](game) and a [pixel paint program](paint).   
+책의 두 번째 부분인 13장부터 19장은 브라우저 JavaScript가 사용할 수 있는 도구를 설명합니다. 화면에 내용을 표시하는 방법(14장 및 17장), 사용자 입력에 응답하는 방법(15장), 그리고 네트워크를 통해 통신하는 방법(18장)을 배울 것입니다. 이 부분에도 두 개의 프로젝트 장이 포함되어 있으며, 플랫폼 게임과 픽셀 페인트 프로그램을 만듭니다.
 
-[Chapter ?](node) describes Node.js, and [Chapter ?](skillsharing) builds a small website using that tool.
+[Chapter ?](node) describes Node.js, and [Chapter ?](skillsharing) builds a small website using that tool.   
+제20장에서는 Node.js에 대해 설명하고, 제21장에서는 해당 도구를 사용하여 작은 웹사이트를 구축합니다.
 
 {{if commercial
 
-Finally, [Chapter ?](fast) describes some of the considerations that come up when optimizing JavaScript programs for speed.
-
+Finally, [Chapter ?](fast) describes some of the considerations that come up when optimizing JavaScript programs for speed.   
+마지막으로, 제21장에서는 JavaScript 프로그램을 속도를 최적화할 때 고려해야 할 몇 가지 사항을 설명합니다.
 if}}
 
 ## Typographic conventions
